@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task22 {
 
+    //take array 2D “ 3* 3 “from user and then display how many rows or column or diagonal are equals
     public static void main(String[] args) {
         int arr[][] = new int[3][3];
         int count = 0;
