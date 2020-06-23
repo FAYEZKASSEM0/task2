@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Task21 {
 
+    // Write a program that take from user number consist of many digits and then get count of every number between 1 – 9
     public static void main(String[] args) {
         System.out.print("please enter a number: ");
         Scanner t = new Scanner(System.in);
