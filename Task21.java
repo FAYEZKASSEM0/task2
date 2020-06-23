@@ -1,6 +1,5 @@
 package task21;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Task21 {
@@ -8,20 +7,13 @@ public class Task21 {
     public static void main(String[] args) {
         System.out.print("please enter a number: ");
         Scanner t = new Scanner(System.in);
-        long num = t.nextLong();
-        ArrayList<Integer> nums = new ArrayList<>();
-        int dig;
-        for (int i = 0; i < 9; i++) {
-            dig = (int) (num % 10);
-            nums.add(dig);
-            num = num / 10;
+        String num = t.nextLine();
+        int nums [] = new int[10];
+        String strarr[] = num.split("");
+        for (String strarr1 : strarr) {
+            nums[Integer.parseInt(strarr1)] = nums[Integer.parseInt(strarr1)] + 1;
         }
-        int size = nums.size(), count = 1;
-        for (int i = 0; i < size; i++) {
-            count = count + 1;
-            System.out.println(count + " .... > " + nums.get(i));
+        for (int i = 0; i < 10; i++) 
+            System.out.println(i + " .... > " + nums[i]);
         }
-
-    }
-
 }
